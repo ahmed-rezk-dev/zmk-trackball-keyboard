@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
 #include "italian.keycodes"
 
 // Layer definitions
@@ -124,7 +123,7 @@
         ext_layer {
             bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     &kp ESC       &mkp LCLK       &trans          &mkp RCLK        &kp LC(B)         &kp PG_DN    &kp PG_UP      &kp HOME      &kp END       &kp CAPS
+                     &kp ESC       &mkp LCLK       &trans          &trans       &kp LC(B)         &kp PG_DN    &kp PG_UP      &kp HOME      &kp END       &kp CAPS
                      &kp TAB       &sk LGUI     &sk LALT        &sk LCTRL     &sk LCMD 		    &kp LEFT     &kp DOWN       &kp UP        &kp RIGHT     &kp DEL
                      &kp LC(Z)     &kp LC(X)    &kp LC(C)       &sk LSHIFT    &kp LC(V)         &kp LC(BSPC) &kp BSPC       &kp LC(S)     &trans        &trans
                 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
