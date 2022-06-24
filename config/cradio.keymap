@@ -54,7 +54,11 @@
 
 / { 
 
-     behaviors {
+    macros {
+        #include "macros.dtsi"
+    };
+
+    behaviors {
         // Sticky key on tap, normal key on hold
         // Useful for modifier-clicking without the modifier remaining active
          nk: not_so_sticky_key {
@@ -75,7 +79,7 @@
           release-after-ms = <STICKY_KEY_TIMEOUT>;
         };
     };
-        
+
     keymap {
         compatible = "zmk,keymap";
                 
