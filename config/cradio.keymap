@@ -105,7 +105,7 @@
                     &kp A          &kp S         &kp D         &kp F            &kp G          &kp H         &kp J         &kp K         &kp L         &mt LCTRL ESC
                     &kp Z          &kp X        &kp C          &kp V            &kp B          &kp N         &kp M         &kp COMMA     &kp DOT       &mt LALT BSPC
                 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                              &mo EXT      &mt LSHIFT SPACE   &trans   &trans
+                                                              &mo EXT      &mt LSHIFT SPACE   &mo NUMBERS     &mo SYM  
                 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -119,7 +119,7 @@
                     &kp QUESTION   &kp GRAVE     &kp TILDE   &kp COMMA       &kp SLASH         &kp SQT       &kp DQT       &kp LBRC      &kp LPAR      &kp LBKT
                     &kp PIPE       &kp MINUS     &kp EQUAL     &kp PLUS      &kp BSLH          &kp LT        &kp GT        &kp RBRC      &kp RPAR      &kp RBKT
                 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                                &trans        &kp COLON            &trans       &trans
+                                                              &mo FNC        &kp COLON            &trans       &trans
                 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -128,9 +128,9 @@
         ext_layer {
             bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     &kp ESC       &trans       &trans          &trans        &kp LC(B)         &kp PG_DN    &kp PG_UP      &kp HOME      &kp END       &kp CAPS
+                     &kp ESC       &kp LC(LEFT) &kp LC(RIGHT)   &mkp LCLK     &mkp RCLK         &kp PG_DN    &kp PG_UP      &kp HOME      &kp END       &kp CAPS
                      &kp TAB       &sk LGUI     &sk LALT        &sk LCTRL     &sk LCMD 		    &kp LEFT     &kp DOWN       &kp UP        &kp RIGHT     &kp DEL
-                     &kp LC(Z)     &kp LC(X)    &kp LC(C)       &sk LSHIFT    &kp LC(V)         &kp LC(BSPC) &kp BSPC       &kp LC(S)     &trans        &trans
+                     &kp LC(Z)     &kp LC(X)    &kp LC(C)       &sk LSHIFT    &kp LC(B)         &kp LC(BSPC) &kp BSPC       &kp LC(S)     &trans        &trans
                 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                                 &trans        &kp LCTRL         &kp ENTER    &mo FNC 
                 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
