@@ -70,6 +70,10 @@
         };
     };
 
+    macros {
+        #include "macros.dtsi"
+    };
+
     behaviors {
         // Sticky key on tap, normal key on hold
         // Useful for modifier-clicking without the modifier remaining active
