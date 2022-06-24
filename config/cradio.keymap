@@ -105,7 +105,7 @@
                     &kp A          &kp S         &kp D         &kp F            &kp G          &kp H         &kp J         &kp K         &kp L         &mt LCTRL ESC
                     &kp Z          &kp X        &kp C          &kp V            &kp B          &kp N         &kp M         &kp COMMA     &kp DOT       &mt LALT BSPC
                 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                              &mt FNC RALT      &mt LSHIFT SPACE   &trans   &trans
+                                                              &mt EXT RALT      &mt LSHIFT SPACE   &trans   &trans
                 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -124,7 +124,20 @@
             >;
         };
 
-         // Function keys with modifiers
+        // Main modifiers and arrow keys
+        ext_layer {
+            bindings = <
+                // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+                     &kp ESC       &trans       &trans          &trans        &kp LC(B)         &kp PG_DN    &kp PG_UP      &kp HOME      &kp END       &kp CAPS
+                     &kp TAB       &sk LGUI     &sk LALT        &sk LCTRL     &sk LCMD 		    &kp LEFT     &kp DOWN       &kp UP        &kp RIGHT     &kp DEL
+                     &kp LC(Z)     &kp LC(X)    &kp LC(C)       &sk LSHIFT    &kp LC(V)         &kp LC(BSPC) &kp BSPC       &kp LC(S)     &trans        &trans
+                // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                                &trans        &kp LCTRL         &kp ENTER    &mo FNC 
+                //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+		};
+
+        // Function keys with modifiers
         fnc_layer {
             bindings = <
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                          &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
