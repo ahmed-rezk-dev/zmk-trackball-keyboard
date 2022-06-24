@@ -105,7 +105,7 @@
                     &kp A          &kp S         &kp D         &kp F            &kp G          &kp H         &kp J         &kp K         &kp L         &mt LCTRL ESC
                     &kp Z          &kp X        &kp C          &kp V            &kp B          &kp N         &kp M         &kp COMMA     &kp DOT       &mt LALT BSPC
                 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                              &mt EXT RALT      &mt LSHIFT SPACE   &trans   &trans
+                                                              &mo EXT      &mt LSHIFT SPACE   &trans   &trans
                 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
