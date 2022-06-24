@@ -9,6 +9,32 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 
+&mt {
+   //  flavor = "tap-preferred";
+   // tapping_term_ms = <200>;
+};
+
+#define SK(KEY) &nk KEY KEY
+// Keep sticky keys active for a long time so they effectively do not time out
+#define STICKY_KEY_TIMEOUT 60000
+
+&sk {
+  release-after-ms = <STICKY_KEY_TIMEOUT>;
+};
+
+&caps_word {
+  continue-list = <UNDERSCORE MINUS BACKSPACE>;
+}; 
+
+
+/* KEY POSITIONS
+  ╭───────────────────────╮          ╭───────────────────────╮
+  │          0   1   2  3 │          │  4   5   6   7        │
+  │  8   9  10  11  12 13 │          │ 14  15  16  17  18  19│
+  │     20  21  22  23 24  ───╮ ╭────  25  26  27  28  29    │
+  ╰─────────────────╮  30  31 │ │ 32  33 ╭───────────────────╯
+                    ╰─────────╯ ╰────────╯           
+*/
 
 &mt {
   //  flavor = "tap-preferred";
