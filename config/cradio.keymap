@@ -68,6 +68,12 @@
             key-positions = <31 33>;
             bindings = <&mo SYM2>;
         };
+
+        active_scrolling {
+            timeout-ms = <200>;
+            key-positions = <2 3>;
+            bindings = <&mkp MCLK>;
+        };
     };
 
     
