@@ -20,7 +20,7 @@
 #define STICKY_KEY_TIMEOUT 60000
 
 #define MASH LS(LC(LA)) -- Example &kp MASH
-#define HYP(key) LS(LC(LA(LG))) -- Example &kp HYP
+#define HYP LS(LC(LA(LGUI))) -- Example &kp HYP
 #define HYPER(key) LS(LC(LA(LG(key)))) -- Example &kp HYPER(L)
 
 &sk {
