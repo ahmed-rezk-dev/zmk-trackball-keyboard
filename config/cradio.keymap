@@ -19,6 +19,10 @@
 // Keep sticky keys active for a long time so they effectively do not time out
 #define STICKY_KEY_TIMEOUT 60000
 
+#define MASH LS(LC(LA)) -- Example &kp MASH
+#define HYP(key) LS(LC(LA(LG))) -- Example &kp HYP
+#define HYPER(key) LS(LC(LA(LG(key)))) -- Example &kp HYPER(L)
+
 &sk {
   release-after-ms = <STICKY_KEY_TIMEOUT>;
 };
@@ -135,13 +139,13 @@
             bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                      &kp ESC       &kp LC(LEFT) &kp LC(RIGHT)   &mkp LCLK     &mkp RCLK         &kp PG_DN    &kp PG_UP      &kp HOME      &kp END       &kp CAPS
-                     &kp TAB       &mkp MCLK     &sk LALT        &sk LCTRL     &sk LCMD 		    &kp LEFT     &kp DOWN       &kp UP        &kp RIGHT     &kp DEL
-                     &kp LC(Z)     &kp LC(X)    &kp LC(C)       &sk LSHIFT    &kp LC(B)         &kp LC(BSPC) &kp BSPC       &kp LC(S)     &trans        &trans
+                     &kp TAB       &mkp MCLK     &sk LALT        &sk LCTRL     &sk LCMD 		&kp LEFT     &kp DOWN       &kp UP        &kp RIGHT     &kp DEL
+                     &kp HYP       &kp MASH      &kp LC(C)       &sk LSHIFT    &kp LC(B)        &kp LC(BSPC) &kp BSPC       &kp LC(S)     &trans        &trans
                 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                                 &trans        &kp LCTRL         &kp ENTER    &mo FNC 
                 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
-		};
+		};&kp HYP        &kp MASH&kp HYP        &kp MASH
 
         // Function keys with modifiers
         fnc_layer {
