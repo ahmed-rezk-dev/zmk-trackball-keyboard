@@ -25,6 +25,7 @@
 
 &sk {
   release-after-ms = <STICKY_KEY_TIMEOUT>;
+  /delete-property/ ignore-modifiers;
 };
 
 &caps_word {
