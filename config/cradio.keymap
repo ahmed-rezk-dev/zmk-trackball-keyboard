@@ -127,9 +127,9 @@
         default_layer {
             bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                    &kp Q          &kp W         &kp E         &kp R            &kp T          &kp Y         &kp U         &kp I         &kp O         &kp HYP 
+                    &kp Q          &kp W         &kp E         &kp R            &kp T          &kp Y         &kp U         &kp I         &kp O         &mt LCMD P 
                     &kp A          &kp S         &kp D         &kp F            &kp G          &kp H         &kp J         &kp K         &kp L         &kp MASH
-                    &kp Z          &kp X        &kp C          &kp V            &kp B          &kp N         &kp M         &kp COMMA     &kp DOT       &mt LALT BSPC
+                    &kp Z          &kp X        &kp C          &kp V            &kp B          &kp N         &kp M         &kp COMMA     &kp DOT       &k HYP
                 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                               &mo EXT      &mt LSHIFT SPACE   &mo NUMBERS     &mo SYM  
                 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
