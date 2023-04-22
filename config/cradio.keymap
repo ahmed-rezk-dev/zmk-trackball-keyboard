@@ -22,6 +22,7 @@
 
 #define MASH LS(LC(LALT))
 #define HYP LS(LC(LA(LGUI)))
+#define ULTRA LG(LC(LALT))
 #define HYPER(key) LS(LC(LA(LG(key))))
 
 &sk {
