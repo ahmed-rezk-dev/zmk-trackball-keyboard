@@ -79,11 +79,6 @@
             bindings = <&mo SYM2>;
         };
 
-        active_scrolling {
-            timeout-ms = <200>;
-            key-positions = <2 3>;
-            bindings = <&mkp MCLK>;
-        };
     };
 
     behaviors {
@@ -153,8 +148,8 @@
 
         ext_layer {
             bindings = <
-&kp ESC   &kp LC(LEFT)  &kp LC(RIGHT)  &mkp LCLK   &mkp RCLK    &kp PG_DN     &kp PG_UP  &kp HOME   &kp END         &kp CAPS
-&kp TAB   &mkp MCLK     &sk LALT       &sk LCTRL   &sk LCMD     &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT       &kp DEL
+&kp ESC   &kp LC(LEFT)  &kp LC(RIGHT)  &trans   &trans    &kp PG_DN     &kp PG_UP  &kp HOME   &kp END         &kp CAPS
+&kp TAB   &trans     &sk LALT       &sk LCTRL   &sk LCMD     &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT       &kp DEL
 &sk MASH  &sk HYP       &kp LC(C)      &sk LSHIFT  &kp LC(B)    &kp LC(BSPC)  &kp BSPC   &kp LC(S)  &sk LC(LSHIFT)  &trans
                                        &trans      &kp LCTRL    &kp ENTER     &mo FNC
             >;
